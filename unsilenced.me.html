@@ -1,0 +1,185 @@
+<!DOCTYPE html><html><head><base href="https://unsilenced.me">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unsilenced - AI-Powered Music Creation</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.feature {
+  flex-basis: 30%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.testimonials {
+  background-color: #f4f4f4;
+  padding: 2rem;
+}
+
+.testimonial {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+  
+  .feature {
+    flex-basis: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+  <h1>Unsilenced</h1>
+  <nav>
+    <ul>
+      <li><a href="https://unsilenced.me/home">Home</a></li>
+      <li><a href="https://unsilenced.me/pricing">Pricing</a></li>
+      <li><a href="https://unsilenced.me/contact">Contact</a></li>
+      <li><a href="https://unsilenced.me/blogs">Blogs</a></li>
+      <li><a href="https://unsilenced.me/api">API</a></li>
+      <li><a href="https://unsilenced.me/affiliate">Affiliate</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <section class="hero">
+      <h2>Sing Like Your Favorite Artist In Seconds With AI</h2>
+      <p>Use AI to create music with your voice or other voices and make music like never before.</p>
+      <a href="/get-started" class="cta-button">Get Started - It's Free</a>
+      <p>No Credit Card Required</p>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>AI Voice Artists</h3>
+        <p>Explore our collection of copyright-free vocals to give your songs a new sound</p>
+      </div>
+      <div class="feature">
+        <h3>Create your Own AI</h3>
+        <p>Easily upload your vocals to create your own AI model that will sound just like you</p>
+      </div>
+      <div class="feature">
+        <h3>Stem Splitters Coming Soon</h3>
+        <p>Isolate the tracks on any song (drums, vocals, bass, etc.)</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Changing Music Around The World</h2>
+      <div class="testimonial">
+        <p>"This is the greatest AI music tool I have ever used. I was able to make so much focus music with the text-to-music feature of Soundsfy."</p>
+        <p>- Sharif Sham, Founder of Lexica</p>
+      </div>
+      <div class="testimonial">
+        <p>"This changed my life. I no longer need to pay $500 to a vocalist to sing on my song. I can now do it myself from my computer. This is a game changer for the music space."</p>
+        <p>- Dylan Molina, Singer</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  <p>© 2023 Unsilenced Inc. All rights reserved.</p>
+  <nav>
+    <ul>
+      <li><a href="https://unsilenced.me/terms">Terms and Conditions</a></li>
+      <li><a href="https://unsilenced.me/privacy">Privacy Policy</a></li>
+      <li><a href="https://unsilenced.me/refund">Refund Policy</a></li>
+      <li><a href="https://unsilenced.me/dmca">DMCA Policy</a></li>
+    </ul>
+  </nav>
+</footer>
+
+  <script>
+    // Add interactivity and animations here
+    document.addEventListener('DOMContentLoaded', () => {
+      const ctaButton = document.querySelector('.cta-button');
+      ctaButton.addEventListener('mouseover', () => {
+        ctaButton.style.backgroundColor = '#0056b3';
+      });
+      ctaButton.addEventListener('mouseout', () => {
+        ctaButton.style.backgroundColor = '#007bff';
+      });
+
+      // Simple animation for features
+      const features = document.querySelectorAll('.feature');
+      features.forEach((feature, index) => {
+        feature.style.opacity = '0';
+        feature.style.transform = 'translateY(20px)';
+        feature.style.transition = 'opacity 0.5s, transform 0.5s';
+        setTimeout(() => {
+          feature.style.opacity = '1';
+          feature.style.transform = 'translateY(0)';
+        }, 300 * (index + 1));
+      });
+    });
+  </script>
+
+</body></html>
